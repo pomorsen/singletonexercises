@@ -1,0 +1,33 @@
+Zadanie 2:
+
+Stworzymy praktyczny zbiór klas odpowiadający za przechowywanie konfiguracji
+wewnątrz aplikacji. Naturalne jest posiadanie w programie plików konfiguracyjnych
+które zawierają pewne parametry wykonania. My stworzymy aplikację która będzie ładowała
+dane z pliku konfiguracyjnego i będzie przechowywała w singletonie (aby mieć do nich dostęp wszędzie).
+
+Nasza aplikacja będzie czymś w rodzaju gry. Zasada działania gry. Po rozpoczęciu gry aplikacja losuje dwie
+liczby, oraz losuje działanie matematyczne, a następnie zadaje pytanie użytkownikowi:
+Ile wynosi {liczba1} {działanie} {liczba2}?
+
+i użytkownik musi odpowiedzieć. Przykład:
+
+liczba wylosowana 1 : 50
+liczba wylosowana 2 : 30
+działanie wylosowane : *
+
+Zadane pytanie:
+Ile wynosi 50 * 30?
+
+Jeśli użytkownik odpowie poprawnie otrzymuje punkt, jeśli niepoprawnie nie otrzymuje punktu.
+
+Aplikacja ma ustawienia ładowane z pliku:
+zakres_liczby_1=1000
+zakres_liczby_2=10000
+dostepne_dzialania=*/+-
+ilosc_rund=10
+
+Na podstawie tych ustawien powinna byc prowadzona rozgrywka 10 rund. po 10 rundach zaprezentuj uzytkownikowi wynik.
+Stwórz:
+- klasę która odpowiada za czytanie konfiguracji z pliku i ładowanie go do klasy "MySettings"
+- klasę MySettings która posiada mapę konfiguracji
+
